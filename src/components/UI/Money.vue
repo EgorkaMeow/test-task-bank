@@ -44,7 +44,7 @@ export default {
         .replace(/\s/g, '')
         .replace(/,/g, '.')
         .replace(/[^.\d]/g, '')
-        .replace(/^([^\.]*\.)|\./g,'$1'); //eslint-disable-line
+        .replace(/^([^\.]*\.)|\./g,'$1'); // eslint-disable-line
       if (value.length > 0) {
         if (value[value.length - 1] === '.') {
           this.valueInput = `${localNumberFormat(value, true)}.`;
